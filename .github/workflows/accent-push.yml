@@ -17,3 +17,15 @@ jobs:
       - run: npm install -g accent-cli
       - run: npm run build:i18n
       - run: accent sync --add-translations --merge-type=passive
+        
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          add-paths: "*.po"
+          commit-message: Update Accent
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          branch: accent
+          draft: false
+          delete-branch: true
+          title: New translations are available to merge
+          body: Translation files have been updated, feel free to merge this pull request after review.
