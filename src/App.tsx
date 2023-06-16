@@ -38,6 +38,7 @@ function App({i18n, t}: any) {
           {t('Click on the Vite and React logos to learn more')}
           {t('nice!!')}
           {t('even better')}
+          {t('it should be good')}
       </p>
     </>
   )
