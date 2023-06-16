@@ -17,8 +17,10 @@ jobs:
       - run: npm install -g accent-cli
       - run: npm run build:i18n
       - run: accent sync --add-translations --merge-type=passive
-      - uses: peter-evans/create-pull-request@v4
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
         with:
+          token: ${{ secrets.PAT }}
           add-paths: "src/locales/**/*.json"
           commit-message: Update Accent
           committer: GitHub <noreply@github.com>
