@@ -1,3 +1,9 @@
 {
-  "Vite + React": "Vite + React en FR"
+  "Vite + React": "woa",
+  "count is {{count}}_one": "test",
+  "count is {{count}}_many": "count is {{count}}",
+  "count is {{count}}_other": "test",
+  "Edit <1>src/App.tsx</1> and save to test HMR": "Edit <1>src/App.tsx</1> and save to test HMR",
+  "Click on the Vite and React logos to learn more": "Test",
+  "nice!!": "nice!!"
 }
