@@ -1,8 +1,12 @@
 {
-  "Vite + React": "Vite + React bruuhhhhhhh",
+  "Vite + React": "This will be updated in due time",
   "count is {{count}}_one": "count is {{count}}",
   "count is {{count}}_other": "count is {{count}}",
-  "Edit <1>src/App.tsx</1> and save to test HMR": "Edit <1>src/App.tsx</1> and save to test HMR",
+  "Edit <1>src/App": {
+    "tsx</1> and save to test HMR": "Edit <1>src/App.tsx</1> and save to test HMR"
+  },
   "Click on the Vite and React logos to learn more": "Click on the Vite and React logos to learn more",
-  "nice!!": "nice!!"
+  "nice!!": "nice!!",
+  "even better": "even better",
+  "it should be good": "it should be good"
 }
