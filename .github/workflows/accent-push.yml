@@ -17,14 +17,13 @@ jobs:
       - run: npm install -g accent-cli
       - run: npm run build:i18n
       - run: accent sync --add-translations --merge-type=passive
-      - name: Check for changes
-        run: |
-          git status --porcelain
-          # Save the output to a variable for further processing
-          # e.g., ${{ steps.check_changes.outputs.stdout }}
-        id: check_changes
+#      - name: Check for changes
+#        run: |
+#          git status --porcelain
+#          # Save the output to a variable for further processing
+#          # e.g., ${{ steps.check_changes.outputs.stdout }}
+#        id: check_changes
       - name: Commit changes
-        if: ${{ steps.check_changes.outputs.stdout != '' }}
         run: |
           git config user.name ${{ github.actor }}
           git config user.email '${{ github.actor }}@users.noreply.github.com'
