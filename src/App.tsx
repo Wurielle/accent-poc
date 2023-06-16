@@ -36,6 +36,8 @@ function App({i18n, t}: any) {
       </div>
       <p className="read-the-docs">
           {t('Click on the Vite and React logos to learn more')}
+          {t('nice!!')}
+          {t('even better')}
       </p>
     </>
   )
