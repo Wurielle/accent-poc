@@ -39,6 +39,7 @@ function App({i18n, t}: any) {
           {t('nice!!')}
           {t('even better')}
           {t('it should be good')}
+          {t('new message')}
       </p>
     </>
   )
